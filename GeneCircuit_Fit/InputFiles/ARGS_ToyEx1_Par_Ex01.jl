@@ -17,9 +17,9 @@ p = Dict([
 
 # Initial conditions:
 x0 = zeros(3);
-x0[1] = 0;		  	 # X
-x0[2] = 0;           # Y
-x0[3] = 0;           # Z
+x0[1] = 0;	 # X
+x0[2] = 0;       # Y
+x0[3] = 0;       # Z
 
 # Fitting instructions ([mean, standard deviation, minimum value, maximum value]):
 pOp = Dict([
@@ -32,4 +32,4 @@ pOp = Dict([
 x  = CSV.File("DATA_ToyEx1.csv") |> Tables.matrix;
 tD = x[1,2:end];		# Time points
 vD = [1,2,3];			# Observable variables
-xD = x[2:end,2:end];	# Data points (array size: vD x tD)
+xD = x[2:end,2:end];		# Data points (array size: vD x tD)
